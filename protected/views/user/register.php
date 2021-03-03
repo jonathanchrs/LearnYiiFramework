@@ -2,8 +2,8 @@
 
 <div class="container mt-5 pt-4">
 	<div class="container pt-5" style="width: 50%; text-align: center">
-		<h1 style="color: white">Register</h1>
-		<form method="POST" action="<?php echo Yii::app()->createUrl('user/registerProcess'); ?>">
+		<h1 style="color: white; font-family: Black Han Sans, sans-serif;">Register</h1>
+		<form method="POST" action="<?php echo Yii::app()->createUrl('user/registerProcess'); ?>" style="font-family: Fjalla One, sans-serif;">
 			<div class="input-group mb-3 mt-5">
 				<span class="input-group-text" id="basic-addon1" style="width: 100px">Name</span>
 				<input type="text" name="name" class="form-control" placeholder="Username" aria-label="Name" aria-describedby="basic-addon1">

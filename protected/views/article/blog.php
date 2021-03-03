@@ -1,7 +1,50 @@
 <?php $this->beginContent('//layouts/main')?>
 
-<div class="container mt-5 pt-5">
-	<div class="container">
+<div class="container mt-5 pt-5" style="">
+	<div class="container pt-4" style="text-align: center;">
+	 	<h1 style="color: white; font-family: 'Black Han Sans', sans-serif;">Owned Article</h1>
+		<table class="table mt-5">
+			<thead>
+				<tr>
+					<th scope="col" style="color: white">Title</th>
+					<th scope="col" style="color: white">Action</th>
+				</tr>
+			</thead>
+			<tbody style="font-family: Fjalla One, sans-serif;">
+				<?php $id = 0 ?>
+				<?php foreach ($articles as $article): ?>
+					<tr class="clickable-row" data-bs-toggle="modal" data-bs-target="#exampleModal<?php echo $id; ?>">
+						<td style="text-align: center;">
+							<h5 style="color: white;"><?php echo $article->title; ?></h5>
+						</td>
+						<td style="text-align: center;">
+							<!-- Modal -->
+							<div class="modal fade" id="exampleModal<?php echo $id; ?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+								<div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title" id="exampleModalLabel"><?php echo $article->title; ?></h5>
+											<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+										</div>
+										<div class="modal-body">
+											<img src="<?php echo Yii::app()->request->baseUrl . '/image/' . $article->image; ?>" alt="not found" width="465px">
+											<p class="mt-3" style="text-align: justify; line-height: 23px; color: black; "><?php echo $article->description; ?></p>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<a href="<?php echo Yii::app()->createUrl('article/deleteBlog', array('id' => $article->id)); ?>" class="btn btn-danger">Delete</a>
+						</td>
+					</tr>
+					<?php $id++; ?>
+				<?php endforeach; ?>
+			</tbody>
+		</table>
+	</div>
+	<div class="container mt-3" style="font-family: Fjalla One, sans-serif;">
 		<a href="#" style="text-decoration: none"><button type="button" class="btn btn-danger" id="btn_create">+ Create Blog</button></a>
 		<form id="create_form" class="hide" method="POST" action="<?php echo Yii::app()->createUrl('article/createBlog') ?>" enctype="multipart/form-data">
 			<div class="form-group mt-4" style="color: white">
@@ -26,50 +69,6 @@
 			</div>
 			<button type="submit" class="btn btn-danger mt-1">Create</button>
 		</form>
-	</div>
-
-	<div class="container pt-4" style="text-align: center">
-	 	<h1 style="color: white">Owned Article</h1>
-		<table class="table mt-5">
-			<thead>
-				<tr>
-					<th scope="col" style="color: white">Title</th>
-					<th scope="col" style="color: white">Action</th>
-				</tr>
-			</thead>
-			<tbody>
-				<?php $id = 0 ?>
-				<?php foreach ($articles as $article): ?>
-					<tr class="clickable-row" data-bs-toggle="modal" data-bs-target="#exampleModal<?php echo $id; ?>">
-						<td style="text-align: center;">
-							<h5 style="color: white;"><?php echo $article->title; ?></h5>
-						</td>
-						<td style="text-align: center;">
-							<!-- Modal -->
-							<div class="modal fade" id="exampleModal<?php echo $id; ?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-								<div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
-									<div class="modal-content">
-										<div class="modal-header">
-											<h5 class="modal-title" id="exampleModalLabel"><?php echo $article->title; ?></h5>
-											<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-										</div>
-										<div class="modal-body">
-											<img src="<?php echo Yii::app()->request->baseUrl . '/image/' . $article->image; ?>" alt="not found" width="465px">
-											<p class="mt-3" style="text-align: justify;"><?php echo $article->description; ?></p>
-										</div>
-										<div class="modal-footer">
-											<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-										</div>
-									</div>
-								</div>
-							</div>
-							<a href="<?php echo Yii::app()->createUrl('article/deleteBlog', array('id' => $article->id)); ?>" class="btn btn-danger">Delete</a>
-						</td>
-					</tr>
-					<?php $id++; ?>
-				<?php endforeach; ?>
-			</tbody>
-		</table>
 	</div>
 </div>
 

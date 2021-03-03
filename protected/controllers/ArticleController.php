@@ -16,7 +16,6 @@ class ArticleController extends Controller
 		$model = Articles::model()->findByPk($id);
 		if($model->delete()){
 			$this->redirect(Yii::app()->createUrl('article/showBlog'));
-			printf("id = %d", $id);
 		}
 	}
 
@@ -50,5 +49,27 @@ class ArticleController extends Controller
 	public function actionGetArticleByTitle($keyword){
 		$articles = Articles::model()->findAllBySql("SELECT * FROM articles WHERE title LIKE '%".$keyword."%'");
 		$this->renderPartial('articlelist', array('articles' => $articles));
+	}
+
+	public function actionLikeArticle(){
+
+	}
+
+	public function actionIsLiked(){
+		$article_id = $_GET['id'];
+
+		$article = Yii::app()->findByPk($article_id);
+		$likedby = explode(',', $article->likedby);
+		
+		foreach ($likedby as $liked) {
+			printf("likeee : %s", $liked);
+		}
+
+		foreach ($likedby as $liked) {
+			if((int)$liked == Yii::app()->user->getState('id')){
+				return true;
+			}
+		}
+		return false;
 	}
 }

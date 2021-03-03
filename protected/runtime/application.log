@@ -7121,3 +7121,1195 @@ Stack trace:
 REQUEST_URI=/jonathan/index.php?r=article/getArticleByTitle&keyword=a\
 HTTP_REFERER=http://laptop-309vt38d/jonathan/index.php?r=article/landing
 ---
+2021/03/02 19:01:15 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY000]: General error: 6 Error on delete of 'C:\xampp\tmp\#sql4bbc_280_0.MAD' (Errcode: 13 "Permission denied"). The SQL statement executed was: SHOW FULL COLUMNS FROM `articles`.
+in C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php (46)
+in C:\xampp\htdocs\jonathan\index.php (13)
+2021/03/02 19:01:15 [error] [exception.CDbException] CDbException: The table "articles" for active record class "Articles" cannot be found in the database. in C:\xampp\yii\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 C:\xampp\yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Articles))
+#1 C:\xampp\yii\framework\db\ar\CActiveRecord.php(658): CActiveRecord->getMetaData()
+#2 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1350): CActiveRecord->getTableSchema()
+#3 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#4 C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php(46): CActiveRecord->findAll()
+#5 C:\xampp\yii\framework\web\actions\CInlineAction.php(49): ArticleController->actionLanding()
+#6 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('landing')
+#10 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('article/landing')
+#11 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\jonathan\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/jonathan/index.php?r=article/landing
+HTTP_REFERER=http://laptop-309vt38d/jonathan/index.php?r=article/showBlog
+---
+2021/03/03 08:36:14 [error] [php] Undefined variable: artilce (C:\xampp\htdocs\jonathan\protected\views\article\articlelist.php:31)
+Stack trace:
+#0 C:\xampp\yii\framework\web\CController.php(869): ArticleController->renderFile()
+#1 C:\xampp\htdocs\jonathan\protected\views\article\landing.php(39): ArticleController->renderPartial()
+#2 C:\xampp\yii\framework\web\CBaseController.php(126): require()
+#3 C:\xampp\yii\framework\web\CBaseController.php(95): ArticleController->renderInternal()
+#4 C:\xampp\yii\framework\web\CController.php(869): ArticleController->renderFile()
+#5 C:\xampp\yii\framework\web\CController.php(782): ArticleController->renderPartial()
+#6 C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php(47): ArticleController->render()
+#7 C:\xampp\yii\framework\web\actions\CInlineAction.php(49): ArticleController->actionLanding()
+#8 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\xampp\yii\framework\web\CController.php(286): ArticleController->runAction()
+#10 C:\xampp\yii\framework\web\CController.php(265): ArticleController->runActionWithFilters()
+#11 C:\xampp\yii\framework\web\CWebApplication.php(282): ArticleController->run()
+#12 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\jonathan\index.php(13): CWebApplication->run()
+REQUEST_URI=/jonathan/index.php?r=article/landing
+in C:\xampp\htdocs\jonathan\protected\views\article\articlelist.php (31)
+in C:\xampp\htdocs\jonathan\protected\views\article\landing.php (39)
+in C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php (47)
+2021/03/03 08:36:18 [error] [php] Undefined variable: artilce (C:\xampp\htdocs\jonathan\protected\views\article\articlelist.php:31)
+Stack trace:
+#0 C:\xampp\yii\framework\web\CController.php(869): ArticleController->renderFile()
+#1 C:\xampp\htdocs\jonathan\protected\views\article\landing.php(39): ArticleController->renderPartial()
+#2 C:\xampp\yii\framework\web\CBaseController.php(126): require()
+#3 C:\xampp\yii\framework\web\CBaseController.php(95): ArticleController->renderInternal()
+#4 C:\xampp\yii\framework\web\CController.php(869): ArticleController->renderFile()
+#5 C:\xampp\yii\framework\web\CController.php(782): ArticleController->renderPartial()
+#6 C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php(47): ArticleController->render()
+#7 C:\xampp\yii\framework\web\actions\CInlineAction.php(49): ArticleController->actionLanding()
+#8 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\xampp\yii\framework\web\CController.php(286): ArticleController->runAction()
+#10 C:\xampp\yii\framework\web\CController.php(265): ArticleController->runActionWithFilters()
+#11 C:\xampp\yii\framework\web\CWebApplication.php(282): ArticleController->run()
+#12 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\jonathan\index.php(13): CWebApplication->run()
+REQUEST_URI=/jonathan/index.php?r=article/landing
+in C:\xampp\htdocs\jonathan\protected\views\article\articlelist.php (31)
+in C:\xampp\htdocs\jonathan\protected\views\article\landing.php (39)
+in C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php (47)
+2021/03/03 09:02:40 [error] [exception.ParseError] ParseError: syntax error, unexpected 'echo' (T_ECHO) in C:\xampp\htdocs\jonathan\protected\views\article\articlelist.php:28
+Stack trace:
+#0 C:\xampp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#1 C:\xampp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#2 C:\xampp\htdocs\jonathan\protected\views\article\landing.php(39): CController->renderPartial('articlelist', Array)
+#3 C:\xampp\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#4 C:\xampp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\yii\framework\web\CController.php(782): CController->renderPartial('landing', Array, true)
+#7 C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php(46): CController->render('landing', Array)
+#8 C:\xampp\yii\framework\web\actions\CInlineAction.php(49): ArticleController->actionLanding()
+#9 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('landing')
+#13 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('article/landing')
+#14 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\jonathan\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/jonathan/index.php?r=article/landing
+---
+2021/03/03 09:13:18 [error] [exception.ParseError] ParseError: syntax error, unexpected ')' in C:\xampp\htdocs\jonathan\protected\views\article\articlelist.php:28
+Stack trace:
+#0 C:\xampp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#1 C:\xampp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#2 C:\xampp\htdocs\jonathan\protected\views\article\landing.php(39): CController->renderPartial('articlelist', Array)
+#3 C:\xampp\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#4 C:\xampp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\yii\framework\web\CController.php(782): CController->renderPartial('landing', Array, true)
+#7 C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php(46): CController->render('landing', Array)
+#8 C:\xampp\yii\framework\web\actions\CInlineAction.php(49): ArticleController->actionLanding()
+#9 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('landing')
+#13 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('article/landing')
+#14 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\jonathan\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/jonathan/index.php?r=article/landing
+---
+2021/03/03 09:18:46 [error] [php] Trying to get property 'name' of non-object (C:\xampp\htdocs\jonathan\protected\components\UserIdentity.php:25)
+Stack trace:
+#0 C:\xampp\yii\framework\web\actions\CInlineAction.php(49): UserController->actionLoginProcess()
+#1 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\xampp\yii\framework\web\CController.php(286): UserController->runAction()
+#3 C:\xampp\yii\framework\web\CController.php(265): UserController->runActionWithFilters()
+#4 C:\xampp\yii\framework\web\CWebApplication.php(282): UserController->run()
+#5 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 C:\xampp\htdocs\jonathan\index.php(13): CWebApplication->run()
+REQUEST_URI=/jonathan/index.php?r=user/loginProcess
+in C:\xampp\htdocs\jonathan\protected\components\UserIdentity.php (25)
+in C:\xampp\htdocs\jonathan\protected\models\Users.php (121)
+in C:\xampp\htdocs\jonathan\protected\controllers\UserController.php (46)
+2021/03/03 09:19:03 [error] [php] Trying to get property 'name' of non-object (C:\xampp\htdocs\jonathan\protected\components\UserIdentity.php:25)
+Stack trace:
+#0 C:\xampp\yii\framework\web\actions\CInlineAction.php(49): UserController->actionLoginProcess()
+#1 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\xampp\yii\framework\web\CController.php(286): UserController->runAction()
+#3 C:\xampp\yii\framework\web\CController.php(265): UserController->runActionWithFilters()
+#4 C:\xampp\yii\framework\web\CWebApplication.php(282): UserController->run()
+#5 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 C:\xampp\htdocs\jonathan\index.php(13): CWebApplication->run()
+REQUEST_URI=/jonathan/index.php?r=user/loginProcess
+in C:\xampp\htdocs\jonathan\protected\components\UserIdentity.php (25)
+in C:\xampp\htdocs\jonathan\protected\models\Users.php (121)
+in C:\xampp\htdocs\jonathan\protected\controllers\UserController.php (46)
+2021/03/03 09:31:48 [error] [exception.CException] CException: CWebApplication and its behaviors do not have a method or closure named "findByPk". in C:\xampp\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php(59): CComponent->__call('findByPk', Array)
+#1 C:\xampp\htdocs\jonathan\protected\views\article\articlelist.php(28): ArticleController->actionIsLiked('3')
+#2 C:\xampp\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\jonathan\protected\views\article\landing.php(39): CController->renderPartial('articlelist', Array)
+#6 C:\xampp\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#9 C:\xampp\yii\framework\web\CController.php(782): CController->renderPartial('landing', Array, true)
+#10 C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php(46): CController->render('landing', Array)
+#11 C:\xampp\yii\framework\web\actions\CInlineAction.php(49): ArticleController->actionLanding()
+#12 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\xampp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#14 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('landing')
+#16 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('article/landing')
+#17 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\jonathan\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/jonathan/index.php?r=article/landing
+HTTP_REFERER=http://laptop-309vt38d/jonathan/index.php?r=article/showBlog
+---
+2021/03/03 09:33:23 [error] [exception.CException] CException: Property "ArticleController.context" is not defined. in C:\xampp\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\jonathan\protected\views\article\articlelist.php(28): CComponent->__get('context')
+#1 C:\xampp\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#3 C:\xampp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\jonathan\protected\views\article\landing.php(39): CController->renderPartial('articlelist', Array)
+#5 C:\xampp\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\yii\framework\web\CController.php(782): CController->renderPartial('landing', Array, true)
+#9 C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php(46): CController->render('landing', Array)
+#10 C:\xampp\yii\framework\web\actions\CInlineAction.php(49): ArticleController->actionLanding()
+#11 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\xampp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('landing')
+#15 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('article/landing')
+#16 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\jonathan\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/jonathan/index.php?r=article/landing
+HTTP_REFERER=http://laptop-309vt38d/jonathan/index.php?r=article/showBlog
+---
+2021/03/03 09:33:53 [error] [exception.CException] CException: CWebApplication and its behaviors do not have a method or closure named "findByPk". in C:\xampp\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php(59): CComponent->__call('findByPk', Array)
+#1 C:\xampp\htdocs\jonathan\protected\views\article\articlelist.php(28): ArticleController->actionIsLiked('3')
+#2 C:\xampp\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\jonathan\protected\views\article\landing.php(39): CController->renderPartial('articlelist', Array)
+#6 C:\xampp\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#9 C:\xampp\yii\framework\web\CController.php(782): CController->renderPartial('landing', Array, true)
+#10 C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php(46): CController->render('landing', Array)
+#11 C:\xampp\yii\framework\web\actions\CInlineAction.php(49): ArticleController->actionLanding()
+#12 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\xampp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#14 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('landing')
+#16 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('article/landing')
+#17 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\jonathan\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/jonathan/index.php?r=article/landing
+HTTP_REFERER=http://laptop-309vt38d/jonathan/index.php?r=article/showBlog
+---
+2021/03/03 09:33:53 [error] [exception.CException] CException: CWebApplication and its behaviors do not have a method or closure named "findByPk". in C:\xampp\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php(59): CComponent->__call('findByPk', Array)
+#1 C:\xampp\htdocs\jonathan\protected\views\article\articlelist.php(28): ArticleController->actionIsLiked('3')
+#2 C:\xampp\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\jonathan\protected\views\article\landing.php(39): CController->renderPartial('articlelist', Array)
+#6 C:\xampp\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#9 C:\xampp\yii\framework\web\CController.php(782): CController->renderPartial('landing', Array, true)
+#10 C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php(46): CController->render('landing', Array)
+#11 C:\xampp\yii\framework\web\actions\CInlineAction.php(49): ArticleController->actionLanding()
+#12 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\xampp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#14 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('landing')
+#16 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('article/landing')
+#17 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\jonathan\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/jonathan/index.php?r=article/landing
+HTTP_REFERER=http://laptop-309vt38d/jonathan/index.php?r=article/showBlog
+---
+2021/03/03 09:33:54 [error] [exception.CException] CException: CWebApplication and its behaviors do not have a method or closure named "findByPk". in C:\xampp\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php(59): CComponent->__call('findByPk', Array)
+#1 C:\xampp\htdocs\jonathan\protected\views\article\articlelist.php(28): ArticleController->actionIsLiked('3')
+#2 C:\xampp\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\jonathan\protected\views\article\landing.php(39): CController->renderPartial('articlelist', Array)
+#6 C:\xampp\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#9 C:\xampp\yii\framework\web\CController.php(782): CController->renderPartial('landing', Array, true)
+#10 C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php(46): CController->render('landing', Array)
+#11 C:\xampp\yii\framework\web\actions\CInlineAction.php(49): ArticleController->actionLanding()
+#12 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\xampp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#14 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('landing')
+#16 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('article/landing')
+#17 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\jonathan\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/jonathan/index.php?r=article/landing
+HTTP_REFERER=http://laptop-309vt38d/jonathan/index.php?r=article/showBlog
+---
+2021/03/03 09:33:54 [error] [exception.CException] CException: CWebApplication and its behaviors do not have a method or closure named "findByPk". in C:\xampp\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php(59): CComponent->__call('findByPk', Array)
+#1 C:\xampp\htdocs\jonathan\protected\views\article\articlelist.php(28): ArticleController->actionIsLiked('3')
+#2 C:\xampp\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\jonathan\protected\views\article\landing.php(39): CController->renderPartial('articlelist', Array)
+#6 C:\xampp\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#9 C:\xampp\yii\framework\web\CController.php(782): CController->renderPartial('landing', Array, true)
+#10 C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php(46): CController->render('landing', Array)
+#11 C:\xampp\yii\framework\web\actions\CInlineAction.php(49): ArticleController->actionLanding()
+#12 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\xampp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#14 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('landing')
+#16 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('article/landing')
+#17 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\jonathan\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/jonathan/index.php?r=article/landing
+HTTP_REFERER=http://laptop-309vt38d/jonathan/index.php?r=article/showBlog
+---
+2021/03/03 09:33:55 [error] [exception.CException] CException: CWebApplication and its behaviors do not have a method or closure named "findByPk". in C:\xampp\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php(59): CComponent->__call('findByPk', Array)
+#1 C:\xampp\htdocs\jonathan\protected\views\article\articlelist.php(28): ArticleController->actionIsLiked('3')
+#2 C:\xampp\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\jonathan\protected\views\article\landing.php(39): CController->renderPartial('articlelist', Array)
+#6 C:\xampp\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#9 C:\xampp\yii\framework\web\CController.php(782): CController->renderPartial('landing', Array, true)
+#10 C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php(46): CController->render('landing', Array)
+#11 C:\xampp\yii\framework\web\actions\CInlineAction.php(49): ArticleController->actionLanding()
+#12 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\xampp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#14 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('landing')
+#16 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('article/landing')
+#17 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\jonathan\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/jonathan/index.php?r=article/landing
+HTTP_REFERER=http://laptop-309vt38d/jonathan/index.php?r=article/showBlog
+---
+2021/03/03 09:35:08 [error] [exception.ParseError] ParseError: syntax error, unexpected 'if' (T_IF) in C:\xampp\htdocs\jonathan\protected\views\article\articlelist.php:28
+Stack trace:
+#0 C:\xampp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#1 C:\xampp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#2 C:\xampp\htdocs\jonathan\protected\views\article\landing.php(39): CController->renderPartial('articlelist', Array)
+#3 C:\xampp\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#4 C:\xampp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\yii\framework\web\CController.php(782): CController->renderPartial('landing', Array, true)
+#7 C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php(46): CController->render('landing', Array)
+#8 C:\xampp\yii\framework\web\actions\CInlineAction.php(49): ArticleController->actionLanding()
+#9 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('landing')
+#13 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('article/landing')
+#14 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\jonathan\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/jonathan/index.php?r=article/landing
+HTTP_REFERER=http://laptop-309vt38d/jonathan/index.php?r=article/showBlog
+---
+2021/03/03 09:35:29 [error] [exception.CException] CException: CWebApplication and its behaviors do not have a method or closure named "findByPk". in C:\xampp\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php(59): CComponent->__call('findByPk', Array)
+#1 C:\xampp\htdocs\jonathan\protected\views\article\articlelist.php(28): ArticleController->actionIsLiked('3')
+#2 C:\xampp\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\jonathan\protected\views\article\landing.php(39): CController->renderPartial('articlelist', Array)
+#6 C:\xampp\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#9 C:\xampp\yii\framework\web\CController.php(782): CController->renderPartial('landing', Array, true)
+#10 C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php(46): CController->render('landing', Array)
+#11 C:\xampp\yii\framework\web\actions\CInlineAction.php(49): ArticleController->actionLanding()
+#12 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\xampp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#14 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('landing')
+#16 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('article/landing')
+#17 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\jonathan\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/jonathan/index.php?r=article/landing
+HTTP_REFERER=http://laptop-309vt38d/jonathan/index.php?r=article/showBlog
+---
+2021/03/03 09:35:51 [error] [exception.CException] CException: CWebApplication and its behaviors do not have a method or closure named "findByPk". in C:\xampp\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php(59): CComponent->__call('findByPk', Array)
+#1 C:\xampp\htdocs\jonathan\protected\views\article\articlelist.php(28): ArticleController->isLiked('3')
+#2 C:\xampp\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\jonathan\protected\views\article\landing.php(39): CController->renderPartial('articlelist', Array)
+#6 C:\xampp\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#9 C:\xampp\yii\framework\web\CController.php(782): CController->renderPartial('landing', Array, true)
+#10 C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php(46): CController->render('landing', Array)
+#11 C:\xampp\yii\framework\web\actions\CInlineAction.php(49): ArticleController->actionLanding()
+#12 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\xampp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#14 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('landing')
+#16 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('article/landing')
+#17 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\jonathan\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/jonathan/index.php?r=article/landing
+HTTP_REFERER=http://laptop-309vt38d/jonathan/index.php?r=article/showBlog
+---
+2021/03/03 09:35:52 [error] [exception.CException] CException: CWebApplication and its behaviors do not have a method or closure named "findByPk". in C:\xampp\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php(59): CComponent->__call('findByPk', Array)
+#1 C:\xampp\htdocs\jonathan\protected\views\article\articlelist.php(28): ArticleController->isLiked('3')
+#2 C:\xampp\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\jonathan\protected\views\article\landing.php(39): CController->renderPartial('articlelist', Array)
+#6 C:\xampp\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#9 C:\xampp\yii\framework\web\CController.php(782): CController->renderPartial('landing', Array, true)
+#10 C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php(46): CController->render('landing', Array)
+#11 C:\xampp\yii\framework\web\actions\CInlineAction.php(49): ArticleController->actionLanding()
+#12 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\xampp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#14 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('landing')
+#16 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('article/landing')
+#17 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\jonathan\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/jonathan/index.php?r=article/landing
+HTTP_REFERER=http://laptop-309vt38d/jonathan/index.php?r=article/showBlog
+---
+2021/03/03 09:35:52 [error] [exception.CException] CException: CWebApplication and its behaviors do not have a method or closure named "findByPk". in C:\xampp\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php(59): CComponent->__call('findByPk', Array)
+#1 C:\xampp\htdocs\jonathan\protected\views\article\articlelist.php(28): ArticleController->isLiked('3')
+#2 C:\xampp\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\jonathan\protected\views\article\landing.php(39): CController->renderPartial('articlelist', Array)
+#6 C:\xampp\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#9 C:\xampp\yii\framework\web\CController.php(782): CController->renderPartial('landing', Array, true)
+#10 C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php(46): CController->render('landing', Array)
+#11 C:\xampp\yii\framework\web\actions\CInlineAction.php(49): ArticleController->actionLanding()
+#12 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\xampp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#14 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('landing')
+#16 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('article/landing')
+#17 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\jonathan\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/jonathan/index.php?r=article/landing
+HTTP_REFERER=http://laptop-309vt38d/jonathan/index.php?r=article/showBlog
+---
+2021/03/03 09:35:52 [error] [exception.CException] CException: CWebApplication and its behaviors do not have a method or closure named "findByPk". in C:\xampp\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php(59): CComponent->__call('findByPk', Array)
+#1 C:\xampp\htdocs\jonathan\protected\views\article\articlelist.php(28): ArticleController->isLiked('3')
+#2 C:\xampp\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\jonathan\protected\views\article\landing.php(39): CController->renderPartial('articlelist', Array)
+#6 C:\xampp\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#9 C:\xampp\yii\framework\web\CController.php(782): CController->renderPartial('landing', Array, true)
+#10 C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php(46): CController->render('landing', Array)
+#11 C:\xampp\yii\framework\web\actions\CInlineAction.php(49): ArticleController->actionLanding()
+#12 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\xampp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#14 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('landing')
+#16 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('article/landing')
+#17 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\jonathan\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/jonathan/index.php?r=article/landing
+HTTP_REFERER=http://laptop-309vt38d/jonathan/index.php?r=article/showBlog
+---
+2021/03/03 09:35:53 [error] [exception.CException] CException: CWebApplication and its behaviors do not have a method or closure named "findByPk". in C:\xampp\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php(59): CComponent->__call('findByPk', Array)
+#1 C:\xampp\htdocs\jonathan\protected\views\article\articlelist.php(28): ArticleController->isLiked('3')
+#2 C:\xampp\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\jonathan\protected\views\article\landing.php(39): CController->renderPartial('articlelist', Array)
+#6 C:\xampp\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#9 C:\xampp\yii\framework\web\CController.php(782): CController->renderPartial('landing', Array, true)
+#10 C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php(46): CController->render('landing', Array)
+#11 C:\xampp\yii\framework\web\actions\CInlineAction.php(49): ArticleController->actionLanding()
+#12 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\xampp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#14 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('landing')
+#16 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('article/landing')
+#17 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\jonathan\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/jonathan/index.php?r=article/landing
+HTTP_REFERER=http://laptop-309vt38d/jonathan/index.php?r=article/showBlog
+---
+2021/03/03 09:46:22 [error] [exception.CException] CException: CWebApplication and its behaviors do not have a method or closure named "findByPk". in C:\xampp\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php(59): CComponent->__call('findByPk', Array)
+#1 C:\xampp\htdocs\jonathan\protected\views\article\articlelist.php(28): ArticleController->isLiked('3')
+#2 C:\xampp\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\jonathan\protected\views\article\landing.php(39): CController->renderPartial('articlelist', Array)
+#6 C:\xampp\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#9 C:\xampp\yii\framework\web\CController.php(782): CController->renderPartial('landing', Array, true)
+#10 C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php(46): CController->render('landing', Array)
+#11 C:\xampp\yii\framework\web\actions\CInlineAction.php(49): ArticleController->actionLanding()
+#12 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\xampp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#14 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('landing')
+#16 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('article/landing')
+#17 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\jonathan\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/jonathan/index.php?r=article/landing
+HTTP_REFERER=http://laptop-309vt38d/jonathan/index.php?r=article/showBlog
+---
+2021/03/03 09:46:52 [error] [exception.CException] CException: ArticleController and its behaviors do not have a method or closure named "isLiked". in C:\xampp\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\jonathan\protected\views\article\articlelist.php(28): CComponent->__call('isLiked', Array)
+#1 C:\xampp\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#3 C:\xampp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\jonathan\protected\views\article\landing.php(39): CController->renderPartial('articlelist', Array)
+#5 C:\xampp\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\yii\framework\web\CController.php(782): CController->renderPartial('landing', Array, true)
+#9 C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php(46): CController->render('landing', Array)
+#10 C:\xampp\yii\framework\web\actions\CInlineAction.php(49): ArticleController->actionLanding()
+#11 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\xampp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('landing')
+#15 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('article/landing')
+#16 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\jonathan\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/jonathan/index.php?r=article/landing
+HTTP_REFERER=http://laptop-309vt38d/jonathan/index.php?r=article/showBlog
+---
+2021/03/03 09:47:00 [error] [exception.CException] CException: ArticleController and its behaviors do not have a method or closure named "isLiked". in C:\xampp\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\jonathan\protected\views\article\articlelist.php(28): CComponent->__call('isLiked', Array)
+#1 C:\xampp\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#3 C:\xampp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\jonathan\protected\views\article\landing.php(39): CController->renderPartial('articlelist', Array)
+#5 C:\xampp\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\yii\framework\web\CController.php(782): CController->renderPartial('landing', Array, true)
+#9 C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php(46): CController->render('landing', Array)
+#10 C:\xampp\yii\framework\web\actions\CInlineAction.php(49): ArticleController->actionLanding()
+#11 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\xampp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('landing')
+#15 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('article/landing')
+#16 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\jonathan\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/jonathan/index.php?r=article/landing
+HTTP_REFERER=http://laptop-309vt38d/jonathan/index.php?r=article/showBlog
+---
+2021/03/03 10:50:37 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY000]: General error: 29 File 'C:\xampp\tmp\#sql5a7c_19a_0.MAD' not found (Errcode: 13 "Permission denied"). The SQL statement executed was: SHOW FULL COLUMNS FROM `articles`.
+in C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php (45)
+in C:\xampp\htdocs\jonathan\index.php (13)
+2021/03/03 10:50:37 [error] [exception.CDbException] CDbException: The table "articles" for active record class "Articles" cannot be found in the database. in C:\xampp\yii\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 C:\xampp\yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Articles))
+#1 C:\xampp\yii\framework\db\ar\CActiveRecord.php(658): CActiveRecord->getMetaData()
+#2 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1350): CActiveRecord->getTableSchema()
+#3 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#4 C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php(45): CActiveRecord->findAll()
+#5 C:\xampp\yii\framework\web\actions\CInlineAction.php(49): ArticleController->actionLanding()
+#6 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('landing')
+#10 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('article/landing')
+#11 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\jonathan\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/jonathan/index.php?r=article/landing
+HTTP_REFERER=http://laptop-309vt38d/jonathan/index.php?r=article/landing
+---
+2021/03/03 10:57:59 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY000]: General error: 6 Error on delete of 'C:\xampp\tmp\#sql5a7c_1b2_0.MAI' (Errcode: 13 "Permission denied"). The SQL statement executed was: SHOW FULL COLUMNS FROM `articles`.
+in C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php (50)
+in C:\xampp\htdocs\jonathan\index.php (13)
+2021/03/03 10:57:59 [error] [exception.CDbException] CDbException: The table "articles" for active record class "Articles" cannot be found in the database. in C:\xampp\yii\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 C:\xampp\yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Articles))
+#1 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1855): CActiveRecord->getMetaData()
+#2 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1887): CActiveRecord->populateRecord(Array, true)
+#3 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1581): CActiveRecord->populateRecords(Array)
+#4 C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php(50): CActiveRecord->findAllBySql('SELECT * FROM a...')
+#5 [internal function]: ArticleController->actionGetArticleByTitle('')
+#6 C:\xampp\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ArticleController), Array)
+#7 C:\xampp\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ArticleController), Object(ReflectionMethod), Array)
+#8 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('getArticleByTit...')
+#12 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('article/getArti...')
+#13 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\jonathan\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/jonathan/index.php?r=article/getArticleByTitle&keyword=
+HTTP_REFERER=http://laptop-309vt38d/jonathan/index.php?r=article/landing
+---
+2021/03/03 11:37:16 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY000]: General error: 6 Error on delete of 'C:\xampp\tmp\#sql5a7c_1fb_0.MAI' (Errcode: 13 "Permission denied"). The SQL statement executed was: SHOW FULL COLUMNS FROM `articles`.
+in C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php (45)
+in C:\xampp\htdocs\jonathan\index.php (13)
+2021/03/03 11:37:16 [error] [exception.CDbException] CDbException: The table "articles" for active record class "Articles" cannot be found in the database. in C:\xampp\yii\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 C:\xampp\yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Articles))
+#1 C:\xampp\yii\framework\db\ar\CActiveRecord.php(658): CActiveRecord->getMetaData()
+#2 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1350): CActiveRecord->getTableSchema()
+#3 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#4 C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php(45): CActiveRecord->findAll()
+#5 C:\xampp\yii\framework\web\actions\CInlineAction.php(49): ArticleController->actionLanding()
+#6 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('landing')
+#10 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('article/landing')
+#11 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\jonathan\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/jonathan/index.php?r=article/landing
+HTTP_REFERER=http://laptop-309vt38d/jonathan/index.php?r=article/landing
+---
+2021/03/03 11:52:25 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY000]: General error: 6 Error on delete of 'C:\xampp\tmp\#sql5a7c_220_0.MAI' (Errcode: 13 "Permission denied"). The SQL statement executed was: SHOW FULL COLUMNS FROM `articles`.
+in C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php (45)
+in C:\xampp\htdocs\jonathan\index.php (13)
+2021/03/03 11:52:25 [error] [exception.CDbException] CDbException: The table "articles" for active record class "Articles" cannot be found in the database. in C:\xampp\yii\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 C:\xampp\yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Articles))
+#1 C:\xampp\yii\framework\db\ar\CActiveRecord.php(658): CActiveRecord->getMetaData()
+#2 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1350): CActiveRecord->getTableSchema()
+#3 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#4 C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php(45): CActiveRecord->findAll()
+#5 C:\xampp\yii\framework\web\actions\CInlineAction.php(49): ArticleController->actionLanding()
+#6 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('landing')
+#10 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('article/landing')
+#11 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\jonathan\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/jonathan/index.php?r=article/landing
+HTTP_REFERER=http://laptop-309vt38d/jonathan/index.php?r=article/landing
+---
+2021/03/03 12:19:31 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY000]: General error: 1036 Table 'C:\xampp\tmp\#sql5a7c_26e_0.MAI' is read only. The SQL statement executed was: SHOW FULL COLUMNS FROM `articles`.
+in C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php (50)
+in C:\xampp\htdocs\jonathan\index.php (13)
+2021/03/03 12:19:31 [error] [exception.CDbException] CDbException: The table "articles" for active record class "Articles" cannot be found in the database. in C:\xampp\yii\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 C:\xampp\yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Articles))
+#1 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1855): CActiveRecord->getMetaData()
+#2 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1887): CActiveRecord->populateRecord(Array, true)
+#3 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1581): CActiveRecord->populateRecords(Array)
+#4 C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php(50): CActiveRecord->findAllBySql('SELECT * FROM a...')
+#5 [internal function]: ArticleController->actionGetArticleByTitle('N')
+#6 C:\xampp\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ArticleController), Array)
+#7 C:\xampp\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ArticleController), Object(ReflectionMethod), Array)
+#8 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('getArticleByTit...')
+#12 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('article/getArti...')
+#13 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\jonathan\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/jonathan/index.php?r=article/getArticleByTitle&keyword=N
+HTTP_REFERER=http://laptop-309vt38d/jonathan/index.php?r=article/landing
+---
+2021/03/03 12:19:33 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY000]: General error: 6 Error on delete of 'C:\xampp\tmp\#sql5a7c_299_0.MAI' (Errcode: 13 "Permission denied"). The SQL statement executed was: SHOW FULL COLUMNS FROM `articles`.
+in C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php (50)
+in C:\xampp\htdocs\jonathan\index.php (13)
+2021/03/03 12:19:33 [error] [exception.CDbException] CDbException: The table "articles" for active record class "Articles" cannot be found in the database. in C:\xampp\yii\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 C:\xampp\yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Articles))
+#1 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1855): CActiveRecord->getMetaData()
+#2 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1887): CActiveRecord->populateRecord(Array, true)
+#3 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1581): CActiveRecord->populateRecords(Array)
+#4 C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php(50): CActiveRecord->findAllBySql('SELECT * FROM a...')
+#5 [internal function]: ArticleController->actionGetArticleByTitle('')
+#6 C:\xampp\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ArticleController), Array)
+#7 C:\xampp\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ArticleController), Object(ReflectionMethod), Array)
+#8 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('getArticleByTit...')
+#12 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('article/getArti...')
+#13 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\jonathan\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/jonathan/index.php?r=article/getArticleByTitle&keyword=
+HTTP_REFERER=http://laptop-309vt38d/jonathan/index.php?r=article/landing
+---
+2021/03/03 12:19:37 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY000]: General error: 6 Error on delete of 'C:\xampp\tmp\#sql5a7c_358_0.MAD' (Errcode: 13 "Permission denied"). The SQL statement executed was: SHOW FULL COLUMNS FROM `articles`.
+in C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php (50)
+in C:\xampp\htdocs\jonathan\index.php (13)
+2021/03/03 12:19:37 [error] [exception.CDbException] CDbException: The table "articles" for active record class "Articles" cannot be found in the database. in C:\xampp\yii\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 C:\xampp\yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Articles))
+#1 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1855): CActiveRecord->getMetaData()
+#2 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1887): CActiveRecord->populateRecord(Array, true)
+#3 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1581): CActiveRecord->populateRecords(Array)
+#4 C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php(50): CActiveRecord->findAllBySql('SELECT * FROM a...')
+#5 [internal function]: ArticleController->actionGetArticleByTitle('Nihiwa')
+#6 C:\xampp\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ArticleController), Array)
+#7 C:\xampp\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ArticleController), Object(ReflectionMethod), Array)
+#8 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('getArticleByTit...')
+#12 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('article/getArti...')
+#13 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\jonathan\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/jonathan/index.php?r=article/getArticleByTitle&keyword=Nihiwa
+HTTP_REFERER=http://laptop-309vt38d/jonathan/index.php?r=article/landing
+---
+2021/03/03 12:19:41 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY000]: General error: 1036 Table 'C:\xampp\tmp\#sql5a7c_3d4_0.MAI' is read only. The SQL statement executed was: SHOW FULL COLUMNS FROM `articles`.
+in C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php (50)
+in C:\xampp\htdocs\jonathan\index.php (13)
+2021/03/03 12:19:41 [error] [exception.CDbException] CDbException: The table "articles" for active record class "Articles" cannot be found in the database. in C:\xampp\yii\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 C:\xampp\yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Articles))
+#1 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1855): CActiveRecord->getMetaData()
+#2 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1887): CActiveRecord->populateRecord(Array, true)
+#3 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1581): CActiveRecord->populateRecords(Array)
+#4 C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php(50): CActiveRecord->findAllBySql('SELECT * FROM a...')
+#5 [internal function]: ArticleController->actionGetArticleByTitle('Nihiwa')
+#6 C:\xampp\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ArticleController), Array)
+#7 C:\xampp\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ArticleController), Object(ReflectionMethod), Array)
+#8 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('getArticleByTit...')
+#12 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('article/getArti...')
+#13 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\jonathan\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/jonathan/index.php?r=article/getArticleByTitle&keyword=Nihiwa
+HTTP_REFERER=http://laptop-309vt38d/jonathan/index.php?r=article/landing
+---
+2021/03/03 12:19:55 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY000]: General error: 1036 Table 'C:\xampp\tmp\#sql5a7c_677_0.MAI' is read only. The SQL statement executed was: SHOW FULL COLUMNS FROM `articles`.
+in C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php (50)
+in C:\xampp\htdocs\jonathan\index.php (13)
+2021/03/03 12:19:55 [error] [exception.CDbException] CDbException: The table "articles" for active record class "Articles" cannot be found in the database. in C:\xampp\yii\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 C:\xampp\yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Articles))
+#1 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1855): CActiveRecord->getMetaData()
+#2 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1887): CActiveRecord->populateRecord(Array, true)
+#3 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1581): CActiveRecord->populateRecords(Array)
+#4 C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php(50): CActiveRecord->findAllBySql('SELECT * FROM a...')
+#5 [internal function]: ArticleController->actionGetArticleByTitle('nihi')
+#6 C:\xampp\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ArticleController), Array)
+#7 C:\xampp\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ArticleController), Object(ReflectionMethod), Array)
+#8 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('getArticleByTit...')
+#12 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('article/getArti...')
+#13 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\jonathan\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/jonathan/index.php?r=article/getArticleByTitle&keyword=nihi
+HTTP_REFERER=http://laptop-309vt38d/jonathan/index.php?r=article/landing
+---
+2021/03/03 12:19:59 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY000]: General error: 1036 Table 'C:\xampp\tmp\#sql5a7c_69e_0.MAI' is read only. The SQL statement executed was: SHOW FULL COLUMNS FROM `articles`.
+in C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php (50)
+in C:\xampp\htdocs\jonathan\index.php (13)
+2021/03/03 12:19:59 [error] [exception.CDbException] CDbException: The table "articles" for active record class "Articles" cannot be found in the database. in C:\xampp\yii\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 C:\xampp\yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Articles))
+#1 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1855): CActiveRecord->getMetaData()
+#2 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1887): CActiveRecord->populateRecord(Array, true)
+#3 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1581): CActiveRecord->populateRecords(Array)
+#4 C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php(50): CActiveRecord->findAllBySql('SELECT * FROM a...')
+#5 [internal function]: ArticleController->actionGetArticleByTitle('nihi')
+#6 C:\xampp\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ArticleController), Array)
+#7 C:\xampp\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ArticleController), Object(ReflectionMethod), Array)
+#8 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('getArticleByTit...')
+#12 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('article/getArti...')
+#13 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\jonathan\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/jonathan/index.php?r=article/getArticleByTitle&keyword=nihi
+HTTP_REFERER=http://laptop-309vt38d/jonathan/index.php?r=article/landing
+---
+2021/03/03 12:20:07 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY000]: General error: 1036 Table 'C:\xampp\tmp\#sql5a7c_794_0.MAI' is read only. The SQL statement executed was: SHOW FULL COLUMNS FROM `articles`.
+in C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php (50)
+in C:\xampp\htdocs\jonathan\index.php (13)
+2021/03/03 12:20:07 [error] [exception.CDbException] CDbException: The table "articles" for active record class "Articles" cannot be found in the database. in C:\xampp\yii\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 C:\xampp\yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Articles))
+#1 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1855): CActiveRecord->getMetaData()
+#2 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1887): CActiveRecord->populateRecord(Array, true)
+#3 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1581): CActiveRecord->populateRecords(Array)
+#4 C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php(50): CActiveRecord->findAllBySql('SELECT * FROM a...')
+#5 [internal function]: ArticleController->actionGetArticleByTitle('')
+#6 C:\xampp\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ArticleController), Array)
+#7 C:\xampp\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ArticleController), Object(ReflectionMethod), Array)
+#8 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('getArticleByTit...')
+#12 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('article/getArti...')
+#13 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\jonathan\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/jonathan/index.php?r=article/getArticleByTitle&keyword=
+HTTP_REFERER=http://laptop-309vt38d/jonathan/index.php?r=article/landing
+---
+2021/03/03 12:20:07 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY000]: General error: 1036 Table 'C:\xampp\tmp\#sql5a7c_796_0.MAI' is read only. The SQL statement executed was: SHOW FULL COLUMNS FROM `articles`.
+in C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php (50)
+in C:\xampp\htdocs\jonathan\index.php (13)
+2021/03/03 12:20:07 [error] [exception.CDbException] CDbException: The table "articles" for active record class "Articles" cannot be found in the database. in C:\xampp\yii\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 C:\xampp\yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Articles))
+#1 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1855): CActiveRecord->getMetaData()
+#2 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1887): CActiveRecord->populateRecord(Array, true)
+#3 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1581): CActiveRecord->populateRecords(Array)
+#4 C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php(50): CActiveRecord->findAllBySql('SELECT * FROM a...')
+#5 [internal function]: ArticleController->actionGetArticleByTitle('')
+#6 C:\xampp\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ArticleController), Array)
+#7 C:\xampp\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ArticleController), Object(ReflectionMethod), Array)
+#8 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('getArticleByTit...')
+#12 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('article/getArti...')
+#13 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\jonathan\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/jonathan/index.php?r=article/getArticleByTitle&keyword=
+HTTP_REFERER=http://laptop-309vt38d/jonathan/index.php?r=article/landing
+---
+2021/03/03 12:20:29 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY000]: General error: 1036 Table 'C:\xampp\tmp\#sql5a7c_812_0.MAI' is read only. The SQL statement executed was: SHOW FULL COLUMNS FROM `articles`.
+in C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php (50)
+in C:\xampp\htdocs\jonathan\index.php (13)
+2021/03/03 12:20:29 [error] [exception.CDbException] CDbException: The table "articles" for active record class "Articles" cannot be found in the database. in C:\xampp\yii\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 C:\xampp\yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Articles))
+#1 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1855): CActiveRecord->getMetaData()
+#2 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1887): CActiveRecord->populateRecord(Array, true)
+#3 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1581): CActiveRecord->populateRecords(Array)
+#4 C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php(50): CActiveRecord->findAllBySql('SELECT * FROM a...')
+#5 [internal function]: ArticleController->actionGetArticleByTitle('nihiwat')
+#6 C:\xampp\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ArticleController), Array)
+#7 C:\xampp\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ArticleController), Object(ReflectionMethod), Array)
+#8 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('getArticleByTit...')
+#12 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('article/getArti...')
+#13 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\jonathan\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/jonathan/index.php?r=article/getArticleByTitle&keyword=nihiwat
+HTTP_REFERER=http://laptop-309vt38d/jonathan/index.php?r=article/landing
+---
+2021/03/03 12:21:04 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY000]: General error: 1036 Table 'C:\xampp\tmp\#sql5a7c_92e_0.MAI' is read only. The SQL statement executed was: SHOW FULL COLUMNS FROM `articles`.
+in C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php (50)
+in C:\xampp\htdocs\jonathan\index.php (13)
+2021/03/03 12:21:04 [error] [exception.CDbException] CDbException: The table "articles" for active record class "Articles" cannot be found in the database. in C:\xampp\yii\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 C:\xampp\yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Articles))
+#1 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1855): CActiveRecord->getMetaData()
+#2 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1887): CActiveRecord->populateRecord(Array, true)
+#3 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1581): CActiveRecord->populateRecords(Array)
+#4 C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php(50): CActiveRecord->findAllBySql('SELECT * FROM a...')
+#5 [internal function]: ArticleController->actionGetArticleByTitle('nihiwatu')
+#6 C:\xampp\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ArticleController), Array)
+#7 C:\xampp\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ArticleController), Object(ReflectionMethod), Array)
+#8 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('getArticleByTit...')
+#12 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('article/getArti...')
+#13 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\jonathan\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/jonathan/index.php?r=article/getArticleByTitle&keyword=nihiwatu
+HTTP_REFERER=http://laptop-309vt38d/jonathan/index.php?r=article/landing
+---
+2021/03/03 12:21:10 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY000]: General error: 6 Error on delete of 'C:\xampp\tmp\#sql5a7c_aa5_0.MAD' (Errcode: 13 "Permission denied"). The SQL statement executed was: SHOW FULL COLUMNS FROM `articles`.
+in C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php (50)
+in C:\xampp\htdocs\jonathan\index.php (13)
+2021/03/03 12:21:10 [error] [exception.CDbException] CDbException: The table "articles" for active record class "Articles" cannot be found in the database. in C:\xampp\yii\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 C:\xampp\yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Articles))
+#1 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1855): CActiveRecord->getMetaData()
+#2 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1887): CActiveRecord->populateRecord(Array, true)
+#3 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1581): CActiveRecord->populateRecords(Array)
+#4 C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php(50): CActiveRecord->findAllBySql('SELECT * FROM a...')
+#5 [internal function]: ArticleController->actionGetArticleByTitle('nihiwa')
+#6 C:\xampp\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ArticleController), Array)
+#7 C:\xampp\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ArticleController), Object(ReflectionMethod), Array)
+#8 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('getArticleByTit...')
+#12 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('article/getArti...')
+#13 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\jonathan\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/jonathan/index.php?r=article/getArticleByTitle&keyword=nihiwa
+HTTP_REFERER=http://laptop-309vt38d/jonathan/index.php?r=article/landing
+---
+2021/03/03 12:21:33 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY000]: General error: 1036 Table 'C:\xampp\tmp\#sql5a7c_10f1_0.MAI' is read only. The SQL statement executed was: SHOW FULL COLUMNS FROM `articles`.
+in C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php (50)
+in C:\xampp\htdocs\jonathan\index.php (13)
+2021/03/03 12:21:33 [error] [exception.CDbException] CDbException: The table "articles" for active record class "Articles" cannot be found in the database. in C:\xampp\yii\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 C:\xampp\yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Articles))
+#1 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1855): CActiveRecord->getMetaData()
+#2 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1887): CActiveRecord->populateRecord(Array, true)
+#3 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1581): CActiveRecord->populateRecords(Array)
+#4 C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php(50): CActiveRecord->findAllBySql('SELECT * FROM a...')
+#5 [internal function]: ArticleController->actionGetArticleByTitle('n')
+#6 C:\xampp\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ArticleController), Array)
+#7 C:\xampp\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ArticleController), Object(ReflectionMethod), Array)
+#8 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('getArticleByTit...')
+#12 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('article/getArti...')
+#13 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\jonathan\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/jonathan/index.php?r=article/getArticleByTitle&keyword=n
+HTTP_REFERER=http://laptop-309vt38d/jonathan/index.php?r=article/landing
+---
+2021/03/03 12:21:46 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY000]: General error: 1036 Table 'C:\xampp\tmp\#sql5a7c_126d_0.MAI' is read only. The SQL statement executed was: SHOW FULL COLUMNS FROM `articles`.
+in C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php (50)
+in C:\xampp\htdocs\jonathan\index.php (13)
+2021/03/03 12:21:46 [error] [exception.CDbException] CDbException: The table "articles" for active record class "Articles" cannot be found in the database. in C:\xampp\yii\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 C:\xampp\yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Articles))
+#1 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1855): CActiveRecord->getMetaData()
+#2 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1887): CActiveRecord->populateRecord(Array, true)
+#3 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1581): CActiveRecord->populateRecords(Array)
+#4 C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php(50): CActiveRecord->findAllBySql('SELECT * FROM a...')
+#5 [internal function]: ArticleController->actionGetArticleByTitle('')
+#6 C:\xampp\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ArticleController), Array)
+#7 C:\xampp\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ArticleController), Object(ReflectionMethod), Array)
+#8 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('getArticleByTit...')
+#12 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('article/getArti...')
+#13 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\jonathan\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/jonathan/index.php?r=article/getArticleByTitle&keyword=
+HTTP_REFERER=http://laptop-309vt38d/jonathan/index.php?r=article/landing
+---
+2021/03/03 12:21:46 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY000]: General error: 1036 Table 'C:\xampp\tmp\#sql5a7c_1270_0.MAI' is read only. The SQL statement executed was: SHOW FULL COLUMNS FROM `articles`.
+in C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php (50)
+in C:\xampp\htdocs\jonathan\index.php (13)
+2021/03/03 12:21:46 [error] [exception.CDbException] CDbException: The table "articles" for active record class "Articles" cannot be found in the database. in C:\xampp\yii\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 C:\xampp\yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Articles))
+#1 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1855): CActiveRecord->getMetaData()
+#2 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1887): CActiveRecord->populateRecord(Array, true)
+#3 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1581): CActiveRecord->populateRecords(Array)
+#4 C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php(50): CActiveRecord->findAllBySql('SELECT * FROM a...')
+#5 [internal function]: ArticleController->actionGetArticleByTitle('')
+#6 C:\xampp\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ArticleController), Array)
+#7 C:\xampp\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ArticleController), Object(ReflectionMethod), Array)
+#8 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('getArticleByTit...')
+#12 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('article/getArti...')
+#13 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\jonathan\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/jonathan/index.php?r=article/getArticleByTitle&keyword=
+HTTP_REFERER=http://laptop-309vt38d/jonathan/index.php?r=article/landing
+---
+2021/03/03 12:21:48 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY000]: General error: 6 Error on delete of 'C:\xampp\tmp\#sql5a7c_1284_0.MAD' (Errcode: 13 "Permission denied"). The SQL statement executed was: SHOW FULL COLUMNS FROM `articles`.
+in C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php (50)
+in C:\xampp\htdocs\jonathan\index.php (13)
+2021/03/03 12:21:48 [error] [exception.CDbException] CDbException: The table "articles" for active record class "Articles" cannot be found in the database. in C:\xampp\yii\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 C:\xampp\yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Articles))
+#1 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1855): CActiveRecord->getMetaData()
+#2 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1887): CActiveRecord->populateRecord(Array, true)
+#3 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1581): CActiveRecord->populateRecords(Array)
+#4 C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php(50): CActiveRecord->findAllBySql('SELECT * FROM a...')
+#5 [internal function]: ArticleController->actionGetArticleByTitle('')
+#6 C:\xampp\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ArticleController), Array)
+#7 C:\xampp\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ArticleController), Object(ReflectionMethod), Array)
+#8 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('getArticleByTit...')
+#12 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('article/getArti...')
+#13 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\jonathan\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/jonathan/index.php?r=article/getArticleByTitle&keyword=
+HTTP_REFERER=http://laptop-309vt38d/jonathan/index.php?r=article/landing
+---
+2021/03/03 12:21:49 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY000]: General error: 1036 Table 'C:\xampp\tmp\#sql5a7c_128c_0.MAI' is read only. The SQL statement executed was: SHOW FULL COLUMNS FROM `articles`.
+in C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php (50)
+in C:\xampp\htdocs\jonathan\index.php (13)
+2021/03/03 12:21:49 [error] [exception.CDbException] CDbException: The table "articles" for active record class "Articles" cannot be found in the database. in C:\xampp\yii\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 C:\xampp\yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Articles))
+#1 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1855): CActiveRecord->getMetaData()
+#2 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1887): CActiveRecord->populateRecord(Array, true)
+#3 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1581): CActiveRecord->populateRecords(Array)
+#4 C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php(50): CActiveRecord->findAllBySql('SELECT * FROM a...')
+#5 [internal function]: ArticleController->actionGetArticleByTitle('')
+#6 C:\xampp\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ArticleController), Array)
+#7 C:\xampp\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ArticleController), Object(ReflectionMethod), Array)
+#8 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('getArticleByTit...')
+#12 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('article/getArti...')
+#13 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\jonathan\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/jonathan/index.php?r=article/getArticleByTitle&keyword=
+HTTP_REFERER=http://laptop-309vt38d/jonathan/index.php?r=article/landing
+---
+2021/03/03 12:21:51 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY000]: General error: 6 Error on delete of 'C:\xampp\tmp\#sql5a7c_1299_0.MAD' (Errcode: 13 "Permission denied"). The SQL statement executed was: SHOW FULL COLUMNS FROM `articles`.
+in C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php (50)
+in C:\xampp\htdocs\jonathan\index.php (13)
+2021/03/03 12:21:51 [error] [exception.CDbException] CDbException: The table "articles" for active record class "Articles" cannot be found in the database. in C:\xampp\yii\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 C:\xampp\yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Articles))
+#1 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1855): CActiveRecord->getMetaData()
+#2 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1887): CActiveRecord->populateRecord(Array, true)
+#3 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1581): CActiveRecord->populateRecords(Array)
+#4 C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php(50): CActiveRecord->findAllBySql('SELECT * FROM a...')
+#5 [internal function]: ArticleController->actionGetArticleByTitle('')
+#6 C:\xampp\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ArticleController), Array)
+#7 C:\xampp\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ArticleController), Object(ReflectionMethod), Array)
+#8 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('getArticleByTit...')
+#12 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('article/getArti...')
+#13 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\jonathan\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/jonathan/index.php?r=article/getArticleByTitle&keyword=
+HTTP_REFERER=http://laptop-309vt38d/jonathan/index.php?r=article/landing
+---
+2021/03/03 12:21:53 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY000]: General error: 6 Error on delete of 'C:\xampp\tmp\#sql5a7c_12a2_0.MAI' (Errcode: 13 "Permission denied"). The SQL statement executed was: SHOW FULL COLUMNS FROM `articles`.
+in C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php (50)
+in C:\xampp\htdocs\jonathan\index.php (13)
+2021/03/03 12:21:53 [error] [exception.CDbException] CDbException: The table "articles" for active record class "Articles" cannot be found in the database. in C:\xampp\yii\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 C:\xampp\yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Articles))
+#1 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1855): CActiveRecord->getMetaData()
+#2 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1887): CActiveRecord->populateRecord(Array, true)
+#3 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1581): CActiveRecord->populateRecords(Array)
+#4 C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php(50): CActiveRecord->findAllBySql('SELECT * FROM a...')
+#5 [internal function]: ArticleController->actionGetArticleByTitle('')
+#6 C:\xampp\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ArticleController), Array)
+#7 C:\xampp\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ArticleController), Object(ReflectionMethod), Array)
+#8 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('getArticleByTit...')
+#12 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('article/getArti...')
+#13 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\jonathan\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/jonathan/index.php?r=article/getArticleByTitle&keyword=
+HTTP_REFERER=http://laptop-309vt38d/jonathan/index.php?r=article/landing
+---
+2021/03/03 12:21:53 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY000]: General error: 1036 Table 'C:\xampp\tmp\#sql5a7c_12a6_0.MAI' is read only. The SQL statement executed was: SHOW FULL COLUMNS FROM `articles`.
+in C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php (50)
+in C:\xampp\htdocs\jonathan\index.php (13)
+2021/03/03 12:21:53 [error] [exception.CDbException] CDbException: The table "articles" for active record class "Articles" cannot be found in the database. in C:\xampp\yii\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 C:\xampp\yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Articles))
+#1 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1855): CActiveRecord->getMetaData()
+#2 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1887): CActiveRecord->populateRecord(Array, true)
+#3 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1581): CActiveRecord->populateRecords(Array)
+#4 C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php(50): CActiveRecord->findAllBySql('SELECT * FROM a...')
+#5 [internal function]: ArticleController->actionGetArticleByTitle('')
+#6 C:\xampp\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ArticleController), Array)
+#7 C:\xampp\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ArticleController), Object(ReflectionMethod), Array)
+#8 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('getArticleByTit...')
+#12 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('article/getArti...')
+#13 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\jonathan\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/jonathan/index.php?r=article/getArticleByTitle&keyword=
+HTTP_REFERER=http://laptop-309vt38d/jonathan/index.php?r=article/landing
+---
+2021/03/03 12:21:55 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY000]: General error: 6 Error on delete of 'C:\xampp\tmp\#sql5a7c_12b5_0.MAI' (Errcode: 13 "Permission denied"). The SQL statement executed was: SHOW FULL COLUMNS FROM `articles`.
+in C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php (50)
+in C:\xampp\htdocs\jonathan\index.php (13)
+2021/03/03 12:21:55 [error] [exception.CDbException] CDbException: The table "articles" for active record class "Articles" cannot be found in the database. in C:\xampp\yii\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 C:\xampp\yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Articles))
+#1 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1855): CActiveRecord->getMetaData()
+#2 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1887): CActiveRecord->populateRecord(Array, true)
+#3 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1581): CActiveRecord->populateRecords(Array)
+#4 C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php(50): CActiveRecord->findAllBySql('SELECT * FROM a...')
+#5 [internal function]: ArticleController->actionGetArticleByTitle('')
+#6 C:\xampp\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ArticleController), Array)
+#7 C:\xampp\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ArticleController), Object(ReflectionMethod), Array)
+#8 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('getArticleByTit...')
+#12 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('article/getArti...')
+#13 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\jonathan\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/jonathan/index.php?r=article/getArticleByTitle&keyword=
+HTTP_REFERER=http://laptop-309vt38d/jonathan/index.php?r=article/landing
+---
+2021/03/03 12:22:34 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY000]: General error: 6 Error on delete of 'C:\xampp\tmp\#sql5a7c_12e3_0.MAI' (Errcode: 13 "Permission denied"). The SQL statement executed was: SHOW FULL COLUMNS FROM `articles`.
+in C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php (50)
+in C:\xampp\htdocs\jonathan\index.php (13)
+2021/03/03 12:22:34 [error] [exception.CDbException] CDbException: The table "articles" for active record class "Articles" cannot be found in the database. in C:\xampp\yii\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 C:\xampp\yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Articles))
+#1 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1855): CActiveRecord->getMetaData()
+#2 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1887): CActiveRecord->populateRecord(Array, true)
+#3 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1581): CActiveRecord->populateRecords(Array)
+#4 C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php(50): CActiveRecord->findAllBySql('SELECT * FROM a...')
+#5 [internal function]: ArticleController->actionGetArticleByTitle('')
+#6 C:\xampp\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ArticleController), Array)
+#7 C:\xampp\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ArticleController), Object(ReflectionMethod), Array)
+#8 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('getArticleByTit...')
+#12 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('article/getArti...')
+#13 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\jonathan\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/jonathan/index.php?r=article/getArticleByTitle&keyword=
+HTTP_REFERER=http://laptop-309vt38d/jonathan/index.php?r=article/landing
+---
+2021/03/03 13:24:39 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY000]: General error: 6 Error on delete of 'C:\xampp\tmp\#sql5a7c_1304_0.MAI' (Errcode: 13 "Permission denied"). The SQL statement executed was: SHOW FULL COLUMNS FROM `articles`.
+in C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php (45)
+in C:\xampp\htdocs\jonathan\index.php (13)
+2021/03/03 13:24:39 [error] [exception.CDbException] CDbException: The table "articles" for active record class "Articles" cannot be found in the database. in C:\xampp\yii\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 C:\xampp\yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Articles))
+#1 C:\xampp\yii\framework\db\ar\CActiveRecord.php(658): CActiveRecord->getMetaData()
+#2 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1350): CActiveRecord->getTableSchema()
+#3 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#4 C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php(45): CActiveRecord->findAll()
+#5 C:\xampp\yii\framework\web\actions\CInlineAction.php(49): ArticleController->actionLanding()
+#6 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('landing')
+#10 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('article/landing')
+#11 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\jonathan\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/jonathan/index.php?r=article/landing
+---
+2021/03/03 13:30:48 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY000]: General error: 1036 Table 'C:\xampp\tmp\#sql5a7c_131d_0.MAI' is read only. The SQL statement executed was: SHOW FULL COLUMNS FROM `articles`.
+in C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php (50)
+in C:\xampp\htdocs\jonathan\index.php (13)
+2021/03/03 13:30:48 [error] [exception.CDbException] CDbException: The table "articles" for active record class "Articles" cannot be found in the database. in C:\xampp\yii\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 C:\xampp\yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Articles))
+#1 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1855): CActiveRecord->getMetaData()
+#2 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1887): CActiveRecord->populateRecord(Array, true)
+#3 C:\xampp\yii\framework\db\ar\CActiveRecord.php(1581): CActiveRecord->populateRecords(Array)
+#4 C:\xampp\htdocs\jonathan\protected\controllers\ArticleController.php(50): CActiveRecord->findAllBySql('SELECT * FROM a...')
+#5 [internal function]: ArticleController->actionGetArticleByTitle('Danau Toba')
+#6 C:\xampp\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ArticleController), Array)
+#7 C:\xampp\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ArticleController), Object(ReflectionMethod), Array)
+#8 C:\xampp\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\yii\framework\web\CWebApplication.php(282): CController->run('getArticleByTit...')
+#12 C:\xampp\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('article/getArti...')
+#13 C:\xampp\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\jonathan\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/jonathan/index.php?r=article/getArticleByTitle&keyword=Danau%20Toba
+HTTP_REFERER=http://laptop-309vt38d/jonathan/index.php?r=article/landing
+---

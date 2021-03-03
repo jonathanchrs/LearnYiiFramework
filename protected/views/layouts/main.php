@@ -13,9 +13,11 @@
 <![endif]-->
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
 <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css" />
 <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
-
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Francois+One&family=Paytone+One&family=Black+Han+Sans&display=swap" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 <?php echo CHtml::scriptFile(Yii::app()->request->baseUrl . "/js/file.js"); ?>
@@ -32,58 +34,55 @@
 
 <body class="bg-dark">
 	<nav class="navbar navbar-expand-lg navbar-light bg-dark">
-		<div class="container">
+		<div class="container pt-4 mt-3">
 			<div class="container-fluid">
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
-				<div class="collapse navbar-collapse" id="navbarText">
+				<div class="collapse navbar-collapse" id="navbarText" style="font-family: Fjalla One, sans-serif;">
+					<a class="navbar-brand" href="<?php echo Yii::app()->createUrl('article/landing') ?>" style="display: inline;">
+						<img src="<?php echo Yii::app()->request->baseUrl . '/image/logo.png'; ?>" alt="" width="200px">
+					</a>
 					<?php if(Yii::app()->user->getIsGuest()): ?>
 					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 						<li class="nav-item">
-							<a class="nav-link" href="<?php echo Yii::app()->createUrl('article/landing') ?>" style="color: white">Home</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="<?php echo Yii::app()->createUrl('guest/aboutUs') ?>" style="color: white">About Us</a>
+							<a class="nav-link" href="<?php echo Yii::app()->createUrl('guest/aboutUs') ?>"><h4 style="color: white; margin-left: 30px">About Us</h4></a>
 						</li>
 					</ul>
 					<?php else: ?>
 						<?php if(Yii::app()->user->getState('role') == 'User'): ?>
-						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-left: 30px">
 							<li class="nav-item">
-								<a class="nav-link" href="<?php echo Yii::app()->createUrl('article/landing') ?>" style="color: white">Home</a>
+								<a class="nav-link" href="<?php echo Yii::app()->createUrl('user/showUpdate') ?>"><h4 style="color: white">Profil</h4></a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="<?php echo Yii::app()->createUrl('user/showUpdate') ?>" style="color: white">Profil</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="<?php echo Yii::app()->createUrl('article/showBlog') ?>" style="color: white">My Blog</a>
+								<a class="nav-link" href="<?php echo Yii::app()->createUrl('article/showBlog') ?>"><h4 style="color: white">My Blog</h4></a>
 							</li>
 						</ul>
 						<?php elseif(Yii::app()->user->getState('role') == 'Admin'): ?>
 						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 							<li class="nav-item">
-								<a class="nav-link" href="<?php echo Yii::app()->createUrl('article/landing') ?>" style="color: white">Home</a>
+								<a class="nav-link" href="#"><h4 style="color: white">Admin</h4></a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#" style="color: white">Admin</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="<?php echo Yii::app()->createUrl('user/showUser') ?>" style="color: white">User</a>
+								<a class="nav-link" href="<?php echo Yii::app()->createUrl('user/showUser') ?>"><h4 style="color: white">User</h4></a>
 							</li>
 						</ul>
 					<?php endif; ?>
 				<?php endif; ?>
 				<?php if(Yii::app()->user->getIsGuest()): ?>
 				<span class="navbar-text" style="margin-right: 20px">
-					<a class="nav-link" href="<?php echo Yii::app()->createUrl('user/showRegister'); ?>" style="color: white">Sign Up</a>
+					<a class="nav-link" href="<?php echo Yii::app()->createUrl('user/showRegister'); ?>"><h4 style="color: white">Sign Up</h4></a>
 				</span>
 				<span class="navbar-text">
-					<a class="nav-link" href="<?php echo Yii::app()->createUrl('user/showLogin') ?>"s style="color: white">Login</a>
+					<a class="nav-link" href="<?php echo Yii::app()->createUrl('user/showLogin') ?>"><h4 style="color: white">Login</h4></a>
 				</span>
 				<?php else: ?>
 					<span class="navbar-text">
-						<a class="nav-link" href="<?php echo Yii::app()->createUrl('user/logout') ?>"s style="color: white">Logout</a>
+						<h4 class="mt-2" style="color: white; margin-right: 20px"><?php echo "Welcome ".Yii::app()->user->getState('name')." !"; ?></h4>
+					</span>
+					<span class="navbar-text mt-1">
+						<a class="nav-link" href="<?php echo Yii::app()->createUrl('user/logout') ?>"><h4 style="color: white">Logout</h4></a>
 					</span>
 				<?php endif; ?>
 			</div>
@@ -91,7 +90,7 @@
 	</div>
 </nav>
 
-<div class="container">
+<div class="container pt-5">
 	<div class="container">
 		<?php echo $content; ?>
 	</div>

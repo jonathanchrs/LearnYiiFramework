@@ -14,9 +14,18 @@ $(document).ready(function(){
 	});
 
 	$('#keyword').keyup(function(){
-		console.log('ok');
-		$.get('http://laptop-309vt38d/jonathan/index.php?r=article/getArticleByTitle&keyword=' + $('#keyword').val(), function(data){
+		$.get('index.php?r=article/getArticleByTitle&keyword=' + $('#keyword').val(), function(data){
 			$('#result').html(data);
 		});
 	});
+
+	$('.card').mouseenter(function(){
+		$('.card').not(this).css('z-index', '1');
+		$(this).css({'transform':'scale(1.25)', 'z-index':'2', 'position':'relative'});
+	});
+
+	$('.card').mouseleave(function(){
+		$(this).css({'transition':'0.4s', 'transform':'scale(1)'});
+	});
 });
+
